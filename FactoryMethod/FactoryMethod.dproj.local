@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.346,D:\uses\dev\Delphi\Project1.dproj=D:\uses\dev\Delphi\incrediBuild\FactoryMethod\FactoryMethod.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.557,D:\uses\dev\Delphi\incrediBuild\FactoryMethod\Unit1.pas=D:\uses\dev\Delphi\incrediBuild\FactoryMethod\FactoryMethodUnit.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.217,=D:\uses\dev\Delphi\incrediBuild\FactoryMethod\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,37 @@
+program FactoryMethod;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils,
+  FactoryMethodUnit in 'FactoryMethodUnit.pas';
+
+var
+  awc :TAbstractWidgetCreator;
+  w1, w2, w3 :IWidget;
+  wf1, wf2, wf3 :IWidgetFactory;
+begin
+  try
+    awc:=TAbstractWidgetCreator.Create();
+    w1:=awc.CreateWidget('TMYButton');
+    w1.printName();
+    w2:=awc.CreateWidget('TMYLabel');
+    w2.printName();
+    w3:=awc.CreateWidget('TMYImage');
+    w3.printName();
+
+    wf1:= TMyButtonFactory.Create;
+
+    wf2:= TMyLabelFactory.Create;
+
+    wf3:= TMyImageFactory.Create;
+
+
+  except
+    on E: Exception do
+      Writeln(E.ClassName, ': ', E.Message);
+  end;
+  readln;
+end.
